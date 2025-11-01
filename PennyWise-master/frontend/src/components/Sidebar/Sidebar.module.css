@@ -1,0 +1,51 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 40;
+  transition: opacity 0.2s;
+}
+
+.sidebar {
+  width: 250px;
+  background: #1e3b21;
+  height: 100vh;
+  padding: 1rem;
+  position: fixed;
+  left: -250px;
+  top: 0;
+  z-index: 50;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.open {
+  transform: translateX(250px);
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 4rem;
+}
+
+.link {
+  color: #e2e8f0;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  border-radius: 0.375rem;
+  transition: background-color 0.2s;
+  font-size: 1.125rem;
+}
+
+.link:hover {
+  background: #33553d;
+}
+
+.active {
+  background: #335535;
+  font-weight: 500;
+}

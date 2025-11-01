@@ -1,0 +1,41 @@
+.header {
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+}
+
+.brand {
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: #1e3b1e;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.brand:hover {
+  color: #4fad19;
+}
+
+.menuButton {
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #3b1e37;
+  border-radius: 0.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.menuButton:hover {
+  background: #f1f5f9;
+}
